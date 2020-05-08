@@ -21,7 +21,7 @@ export default class App extends React.Component {
 
           <div className='left-side'>
             <div className='experience-block'>
-              <span>Developer Experience</span>
+              <span className='sub-heading'>Developer Experience</span>
               <div className='skill-blocks-container'>
                 <div className='skill-block'>
                   Javascript
@@ -29,16 +29,19 @@ export default class App extends React.Component {
                 <div className='skill-block'>
                   PHP
                 </div>
-                <div>
+                <div className='skill-block'>
                   React
+                </div>
+                <div className='skill-block'>
+                  NodeJs
                 </div>
               </div>
             </div>
             <div className='experience-block'>
-              Other Experience
+              <span className='sub-heading'>Other Experience</span>
             </div>
             <div className='experience-block'>
-              Education
+              <span className='sub-heading'>Education</span>
             </div>
           </div>
 
