@@ -1,5 +1,6 @@
 import React from 'react';
-import './css/app.css';
+import './css/app.css'
+import ParticleContainer from './ParticleContainer.js'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -46,6 +47,7 @@ export default class App extends React.Component {
           </div>
 
         </div>
+        <ParticleContainer />
       </React.Fragment>
     );
   }
