@@ -13,7 +13,10 @@ export default class ParticleContainer extends React.Component {
               },
               size: {
                 value: 2.5
-              }
+              },
+              color: {
+                value: '#4b4a4a'
+              },
             },
             interactivity: {
               events: {
