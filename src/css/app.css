@@ -3,8 +3,13 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #1C2E4A;
+    background-color: #e4d5b7;
     align-items: center;
+}
+
+.sub-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
 }
 
 .particles-background {
@@ -53,12 +58,12 @@
     flex-direction: column;
 }
 
-.sub-heading {
-    font-family: 'Days One', sans-serif;
-}
-
 .skill-row {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+}
+
+.icon-medium {
+    font-size: 50px;
 }
