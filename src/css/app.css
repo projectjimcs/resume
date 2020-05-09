@@ -50,9 +50,15 @@
 
 .skill-blocks-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 .sub-heading {
     font-family: 'Days One', sans-serif;
+}
+
+.skill-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
