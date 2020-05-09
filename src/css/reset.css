@@ -365,11 +365,7 @@ textarea {
     padding: 0.2em 0;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
-    color: #000;
+    color: #606060;
     font-family: 'Quicksand', sans-serif;
 }

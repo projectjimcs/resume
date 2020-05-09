@@ -2,15 +2,11 @@ import React from 'react';
 import ExperienceBlock from './Components/ExperienceComponent';
 
 export default class DeveloperExperience extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <ExperienceBlock>
         <div className='skill-blocks-container'>
-          <span className='sub-heading skill-row'>ARE YOU FAMILIAR WITH...?</span>
+          <span className='main-heading skill-row'>ARE YOU FAMILIAR WITH...?</span>
 
           <div className='skill-row'>
             <div className='skill-block'>
