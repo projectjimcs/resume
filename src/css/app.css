@@ -3,8 +3,13 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #1C2E4A;
+    background-color: #e4d5b7;
     align-items: center;
+}
+
+.sub-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
 }
 
 .particles-background {
@@ -50,6 +55,15 @@
 
 .skill-blocks-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
+.skill-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.icon-medium {
+    font-size: 50px;
+}
