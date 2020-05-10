@@ -5,8 +5,8 @@ export default class DeveloperExperience extends React.Component {
   render() {
     return (
       <ExperienceBlock>
-        <div className='skill-blocks-container'>
-          <span className='main-heading skill-row'>ARE YOU FAMILIAR WITH...?</span>
+        <div className='skill-blocks-container developer-icons'>
+          <span className='main-heading skill-row'>HOW FAMILIAR ARE YOU WITH...?</span>
 
           <div className='skill-row'>
             <div className='skill-block'>
