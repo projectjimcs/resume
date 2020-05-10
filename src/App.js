@@ -1,8 +1,9 @@
 import React from 'react';
 import ParticleContainer from './Components/ParticleContainer.js';
 import DeveloperExperience from './DeveloperExperience.js';
-import OtherExperience from './OtherExperience.js';
+import WorkExperience from './WorkExperience.js';
 import EducationExperience from './EducationExperience.js';
+import ProjectExperience from './ProjectExperience.js';
 
 import './css/app.css';
 
@@ -25,8 +26,9 @@ export default class App extends React.Component {
       
           <div className='left-side'>
             <DeveloperExperience />
-            <OtherExperience />
+            <WorkExperience />
             <EducationExperience />
+            <ProjectExperience />
           </div>
 
           <div className='right-side'>
