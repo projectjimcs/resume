@@ -107,6 +107,15 @@ a:visited {
     align-items: center;
 }
 
+.experience-row span.sub-heading:hover {
+    font-size: 150%;
+}
+
+.experience-row span.job-title:hover {
+    font-size: 110%;
+}
+
 .icon-medium {
     font-size: 60px;
 }
+
