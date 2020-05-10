@@ -1,15 +1,22 @@
 import React from 'react';
 import ExperienceBlock from './Components/ExperienceComponent.js';
 
-export default class OtherExperience extends React.Component {
+export default class WorkExperience extends React.Component {
   render() {
     return (
       <ExperienceBlock>
         <div className='skill-blocks-container'>
           <span className='main-heading skill-row'>
-            Other Work Experience
+            Work Experience
           </span>
-          
+          <div className='row'>
+            <div className='experience-row'>
+              <span className='sub-heading'>Push Technologies Inc.</span>
+              <span className='job-title'>Junior Software Developer / Dec 2018 - Present</span>
+              <span className='job-title'>Account Administrator / Nov 2017 - Sep 2018</span>
+            </div>
+          </div>
+
           <div className='row'>
             <div className='experience-row'>
               <span className='sub-heading'>Annaheim Hotel Bar & Grill</span>
