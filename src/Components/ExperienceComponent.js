@@ -2,10 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default class ExperienceBlock extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const blockClass = this.props.isLastBlock ? 'last-experience-block' : 'experience-block';
 

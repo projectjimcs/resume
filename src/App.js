@@ -5,7 +5,8 @@ import WorkExperience from './WorkExperience.js';
 import EducationExperience from './EducationExperience.js';
 import ProjectExperience from './ProjectExperience.js';
 
-import './css/app.css';
+import './css/app.scss';
+import './css/divider.scss';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -26,8 +27,11 @@ export default class App extends React.Component {
       
           <div className='left-side'>
             <DeveloperExperience />
+            <b class="hr anim"></b>
             <WorkExperience />
+            <b class="hr anim"></b>
             <EducationExperience />
+            <b class="hr anim"></b>
             <ProjectExperience />
           </div>
 
