@@ -7,7 +7,7 @@ export default class ProjectExperience extends React.Component {
       <ExperienceBlock isLastBlock={true}>
         <div className='skill-blocks-container'>
           <span className='main-heading skill-row'>
-            Projects
+            PROJECTS
           </span>
 
           <div className='row'>
@@ -19,7 +19,7 @@ export default class ProjectExperience extends React.Component {
 
           <span className='row'>
             <div className='experience-row'>
-              <span className='sub-heading'>Currently Learning</span>
+              <span className='sub-heading'>Currently Exploring</span>
               <span className='job-title'>C# and Unity</span>
             </div>
           </span>
