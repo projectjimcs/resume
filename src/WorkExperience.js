@@ -7,7 +7,7 @@ export default class WorkExperience extends React.Component {
       <ExperienceBlock>
         <div className='skill-blocks-container'>
           <span className='main-heading skill-row'>
-            Work Experience
+            WORK EXPERIENCE
           </span>
           <div className='row'>
             <div className='experience-row'>

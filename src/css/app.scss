@@ -12,7 +12,7 @@
 }
 
 .main-heading {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 30px;
     color: #252525;
 }
@@ -43,6 +43,12 @@
     -ms-transform: scale(1.3);
 }
 
+.skill-block:hover {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+}
+
 a {
     color: #72BDFF;
     text-decoration: none;
@@ -66,26 +72,35 @@ a:visited {
 
 .main-header, .main-content {
     display: flex;
-    border: 1px solid white;
     width: 95%;
 }
 
 .main-header {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
     margin-top: 40px;
+    color: #252525;
 }
 
 .main-content {
     margin-top: 20px;
 }
 
-.left-side {
-    width: 45%;
-    margin: 20px 0 0 20px;
+.left-side, .right-side {
+    flex-grow: 1;
+    margin: 0 10px 0 0;
     z-index: 10;
 }
 
 .right-side {
-    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 10px;
 }
 
 .experience-block, .last-experience-block {
