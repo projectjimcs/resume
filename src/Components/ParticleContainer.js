@@ -17,14 +17,6 @@ export default class ParticleContainer extends React.Component {
               color: {
                 value: '#4b4a4a'
               },
-            },
-            interactivity: {
-              events: {
-                onhover: {
-                  enable: true,
-                  mode: 'repulse'
-                }
-              }
             }
           }} />
       </div>

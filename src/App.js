@@ -34,6 +34,10 @@ export default class App extends React.Component {
         image: Learning,
         speech: 'I am currently learning this!',
       },
+      thanks: {
+        image: Default,
+        speech: 'Thank you for considering me!',
+      }
     };
 
     this.state = {
@@ -80,11 +84,14 @@ export default class App extends React.Component {
 
           <div className='right-side'>
             <Character
+              changeExpression={this.changeExpression}
               expression={expression}
               speech={speech}
             />
           </div>
-
+        </div>
+        <div className='main-footer'>
+          <span><a href="https://www.freepik.com/free-photos-vectors/business">Business vector created by freepik - www.freepik.com</a></span>
         </div>
         <ParticleContainer />
       </React.Fragment>
