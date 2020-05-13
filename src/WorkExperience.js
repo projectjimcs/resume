@@ -11,7 +11,7 @@ export default class WorkExperience extends React.Component {
           </span>
           <div className='row'>
             <div className='experience-row'>
-              <span className='sub-heading'>Push Technologies Inc.</span>
+              <span className='sub-heading'>Push Operations</span>
               <span className='job-title'>Junior Software Developer / Dec 2018 - Present</span>
               <span className='job-title'>Account Administrator / Nov 2017 - Sep 2018</span>
             </div>
