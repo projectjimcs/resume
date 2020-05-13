@@ -3,6 +3,17 @@ import PropTypes from 'prop-types';
 import Typewriter from './Typewriter.js';
 
 export default class Character extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.handleChangeExpression = this.handleChangeExpression.bind(this);
+  }
+
+  handleChangeExpression(event) {
+    const expression = event.target.dataset.expression;
+    this.props.changeExpression(expression);
+    window.location.href = 'mailto:yjzlin@gmail.com';
+  }
 
   render() {
     const {
@@ -16,7 +27,13 @@ export default class Character extends React.Component {
         <div className='character-image'>
           <img src={expression} />
         </div>
-        <button className='hire-me-button'>HIRE ME</button>
+        <button
+          data-expression='thanks'
+          className='hire-me-button'
+          onClick={this.handleChangeExpression}
+        >
+          HIRE ME
+        </button>
       </div>
     );
   }
