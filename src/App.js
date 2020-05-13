@@ -85,6 +85,7 @@ export default class App extends React.Component {
           <div className='right-side'>
             <Character
               changeExpression={this.changeExpression}
+              expressionKey={currentExpression}
               expression={expression}
               speech={speech}
             />
