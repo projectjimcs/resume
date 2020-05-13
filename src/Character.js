@@ -17,13 +17,14 @@ export default class Character extends React.Component {
 
   render() {
     const {
+      expressionKey,
       expression,
       speech
     } = this.props;
 
     return (
       <div className='character-container'>
-        <Typewriter key={expression} speech={speech} />
+        <Typewriter key={expressionKey} speech={speech} />
         <div className='character-image'>
           <img src={expression} />
         </div>
@@ -40,6 +41,7 @@ export default class Character extends React.Component {
 }
 
 Character.propTypes = {
+  expressionKey: PropTypes.string.isRequired,
   expression: PropTypes.string.isRequired,
   speech: PropTypes.string.isRequired,
 };

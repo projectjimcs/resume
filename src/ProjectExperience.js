@@ -13,7 +13,7 @@ export default class ProjectExperience extends React.Component {
           <div className='row'>
             <div className='experience-row'>
               <span className='sub-heading'>Dental Diary</span>
-              <span className='job-title'><a href='https://github.com/projectjimcs/dental-diary' rel='noopener noreferrer' target='_blank'>Dental Diary</a> / Ongoing</span>
+              <span className='job-title'><a href='https://github.com/projectjimcs/dental-diary' rel='noopener noreferrer' target='_blank'>Project Link</a> / Ongoing</span>
             </div>
           </div>
 
