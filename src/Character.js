@@ -24,7 +24,10 @@ export default class Character extends React.Component {
 
     return (
       <div className='character-container'>
-        <Typewriter key={expressionKey} speech={speech} />
+        <Typewriter
+          key={expressionKey}
+          speech={speech}
+        />
         <div className='character-image'>
           <img src={expression} />
         </div>

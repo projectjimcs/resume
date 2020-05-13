@@ -5,10 +5,7 @@ import WorkExperience from './WorkExperience.js';
 import EducationExperience from './EducationExperience.js';
 import ProjectExperience from './ProjectExperience.js';
 import Character from './Character.js';
-import Default from './images/default.png';
-import Confident from './images/confident.png';
-import Decent from './images/decent.png';
-import Learning from './images/learning.png';
+import ExpressionMap from './ExpressionMap.js';
 
 import './css/app.scss';
 import './css/divider.scss';
@@ -17,32 +14,9 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.expressionMap = {
-      default: {
-        image: Default,
-        speech: 'Hi, my name is Jim. Thanks for visiting. Please click on the icons to the left to get to know me.',
-      },
-      confident: {
-        image: Confident,
-        speech: 'Hey, I use that at my current work!',
-      },
-      decent: {
-        image: Decent,
-        speech: 'I know how this works!',
-      },
-      learning: {
-        image: Learning,
-        speech: 'I am currently learning this!',
-      },
-      thanks: {
-        image: Default,
-        speech: 'Thank you for considering me!',
-      }
-    };
-
     this.state = {
       currentExpression: 'default',
-      speech: this.expressionMap['default']['speech'],
+      speech: ExpressionMap['default']['speech'],
     };
 
     this.changeExpression = this.changeExpression.bind(this);
@@ -51,7 +25,7 @@ export default class App extends React.Component {
   changeExpression(expression) {
     this.setState({
       currentExpression: expression,
-      speech: this.expressionMap[expression]['speech'],
+      speech: ExpressionMap[expression]['speech'],
     });
   }
 
@@ -61,7 +35,7 @@ export default class App extends React.Component {
       speech,
     } = this.state;
 
-    const expression = this.expressionMap[currentExpression]['image'];
+    const expression = ExpressionMap[currentExpression]['image'];
 
     return (
       <React.Fragment>
