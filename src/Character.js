@@ -1,27 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Happy from './images/happy.png';
-import Unhappy from './images/unhappy.png';
+import Typewriter from './Typewriter.js';
 
 export default class Character extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.expressionMap = {
-      default: Happy,
-      happy: Happy,
-      unhappy: Unhappy,
-    };
-  }
 
   render() {
     const {
       expression,
+      speech
     } = this.props;
-    console.log(this.expressionMap[expression]);
+
     return (
-      <div>
-        <img src={this.expressionMap[expression]} />
+      <div className='character-container'>
+        <Typewriter key={expression} speech={speech} />
+        <div className='character-image'>
+          <img src={expression} />
+        </div>
+        <button className='hire-me-button'>HIRE ME</button>
       </div>
     );
   }
@@ -29,4 +24,5 @@ export default class Character extends React.Component {
 
 Character.propTypes = {
   expression: PropTypes.string.isRequired,
+  speech: PropTypes.string.isRequired,
 };
