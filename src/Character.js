@@ -48,7 +48,7 @@ export default class Character extends React.Component {
           className='hire-me-button'
           onClick={this.handleChangeExpression}
         >
-          HIRE ME
+          LET'S CHAT!
         </button>
       </div>
     );

@@ -16,6 +16,7 @@
     font-size: 35px;
     color: #BFC28A;
     font-weight: 700;
+    text-align: center;
 }
 
 .main-footer {
@@ -28,6 +29,7 @@
     color: #FBFFE3;
     font-size: 25px;
     display: block;
+    text-align: center;
 }
 
 .sub-heading:hover {
@@ -42,6 +44,7 @@
     font-family: 'Abel', sans-serif;
     margin-top: 5px;
     display: block;
+    text-align: center;
 }
 
 .job-title:hover {
@@ -206,4 +209,43 @@ a:visited {
 
 .star-icon {
     width: 40px;
+}
+
+.mobile-view {
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.screen-warning {
+    color: #BFC28A;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .icon-medium {
+        font-size: 50px;
+    }
+
+    .sub-heading {
+        font-size: 17px;
+    }
+
+    .job-title {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    .icon-medium {
+        font-size: 60px;
+    }
+
+    .sub-heading {
+        font-size: 20px;
+    }
+
+    .job-title {
+        font-size: 15px;
+    }
 }
