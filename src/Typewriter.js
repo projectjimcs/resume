@@ -31,7 +31,7 @@ export default class Typewriter extends React.Component {
       }
     })
 
-    setTimeout(() => this.typeSpeech(speech.slice(1)), 50);
+    setTimeout(() => this.typeSpeech(speech.slice(1)), 30);
   }
 
   render() {
