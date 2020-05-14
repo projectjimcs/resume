@@ -14,18 +14,20 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.mobileSize = 726;
+    this.maxSize = 726;
 
     this.state = {
       currentExpression: 'default',
       isMobile: false,
+      windowSize: window.innerWidth
     };
 
     this.changeExpression = this.changeExpression.bind(this);
   }
 
   componentDidMount() {
-    if (window.innerWidth < this.mobileSize) {
+    window.addEventListener('orientationchange', this.setSize());
+    if (this.state.windowSize < this.maxSize) {
       this.setState({
         isMobile: true,
       });
@@ -35,6 +37,14 @@ export default class App extends React.Component {
   changeExpression(expression) {
     this.setState({
       currentExpression: expression,
+    });
+  }
+
+  setSize() {
+    const size = window.innerWidth;
+
+    this.setState({
+      windowSize: size,
     });
   }
 
