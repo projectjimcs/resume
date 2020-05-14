@@ -14,7 +14,7 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.mobileSize = 376;
+    this.mobileSize = 726;
 
     this.state = {
       currentExpression: 'default',
