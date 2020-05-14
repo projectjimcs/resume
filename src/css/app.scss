@@ -193,3 +193,17 @@ a:visited {
     background-color: #BCBF88;
 }
 
+.star-container {
+    display: flex;
+    min-height: 40px;
+    margin-bottom: 10px;
+}
+
+.half-star {
+    width: 20px;
+    overflow: hidden;
+}
+
+.star-icon {
+    width: 40px;
+}
