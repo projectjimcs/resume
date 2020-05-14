@@ -50,7 +50,7 @@ export default class App extends React.Component {
           isMobile ?
           <div className='main-content mobile-view'>
             <span className='screen-warning'>
-              SCREEN SIZE NOT SUPPORTED. PLEASE USE A LARGER SCREEN AND REFRESH.
+              SCREEN SIZE NOT SUPPORTED. PLEASE USE A LARGER SCREEN AND REFRESH. BEST VIEWED ON A NON-MOBILE DEVICES.
             </span>
           </div>
           :
