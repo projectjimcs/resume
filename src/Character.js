@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Typewriter from './Typewriter.js';
+import StarRating from './StarRating.js';
 
 export default class Character extends React.Component {
   constructor(props) {
@@ -18,18 +19,29 @@ export default class Character extends React.Component {
   render() {
     const {
       expressionKey,
-      expression,
-      speech
+      expressionData,
     } = this.props;
+
+    const starComponent = [];
+    for (let i = 0; i < Math.floor(expressionData.rating); i++) {
+      starComponent.push(<StarRating />);
+    }
+
+    if (expressionData.rating % 1) {
+      starComponent.push(<StarRating isHalfStar={true} />);
+    }
 
     return (
       <div className='character-container'>
+        <div className='star-container'>
+          {starComponent}
+        </div>
         <Typewriter
           key={expressionKey}
-          speech={speech}
+          speech={expressionData.speech}
         />
         <div className='character-image'>
-          <img src={expression} />
+          <img src={expressionData.image} />
         </div>
         <button
           data-expression='thanks'
@@ -45,6 +57,5 @@ export default class Character extends React.Component {
 
 Character.propTypes = {
   expressionKey: PropTypes.string.isRequired,
-  expression: PropTypes.string.isRequired,
-  speech: PropTypes.string.isRequired,
+  expressionData: PropTypes.object.isRequired,
 };

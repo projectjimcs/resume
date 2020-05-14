@@ -16,7 +16,6 @@ export default class App extends React.Component {
 
     this.state = {
       currentExpression: 'default',
-      speech: ExpressionMap['default']['speech'],
     };
 
     this.changeExpression = this.changeExpression.bind(this);
@@ -25,17 +24,13 @@ export default class App extends React.Component {
   changeExpression(expression) {
     this.setState({
       currentExpression: expression,
-      speech: ExpressionMap[expression]['speech'],
     });
   }
 
   render() {
     const {
       currentExpression,
-      speech,
     } = this.state;
-
-    const expression = ExpressionMap[currentExpression]['image'];
 
     return (
       <React.Fragment>
@@ -59,14 +54,13 @@ export default class App extends React.Component {
           <div className='right-side'>
             <Character
               changeExpression={this.changeExpression}
+              expressionData={ExpressionMap[currentExpression]}
               expressionKey={currentExpression}
-              expression={expression}
-              speech={speech}
             />
           </div>
         </div>
         <div className='main-footer'>
-          <span><a href="https://www.freepik.com/free-photos-vectors/business">Business vector created by freepik - www.freepik.com</a></span>
+          <span><a href="https://www.freepik.com/free-photos-vectors" rel='noopener noreferrer' target='_blank'>Business and star vector created by freepik - www.freepik.com</a></span>
         </div>
         <ParticleContainer />
       </React.Fragment>
