@@ -2,6 +2,7 @@ import Default from '../images/default.png';
 import Confident from '../images/confident.png';
 import Decent from '../images/decent.png';
 import Learning from '../images/learning.png';
+import Thanks from '../images/thanks.png';
 
 const expressionMap = {
   default: {
@@ -89,7 +90,7 @@ const expressionMap = {
     rating: 4
   },
   thanks: {
-    image: Default,
+    image: Thanks,
     speech: 'Thank you for considering me!',
   }
 }
