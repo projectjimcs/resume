@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.76a5d578.chunk.css",
-    "main.js": "/resume/static/js/main.8df5ffc0.chunk.js",
-    "main.js.map": "/resume/static/js/main.8df5ffc0.chunk.js.map",
+    "main.css": "/resume/static/css/main.586ae0d5.chunk.css",
+    "main.js": "/resume/static/js/main.ee34ba42.chunk.js",
+    "main.js.map": "/resume/static/js/main.ee34ba42.chunk.js.map",
     "runtime-main.js": "/resume/static/js/runtime-main.3ebc219f.js",
     "runtime-main.js.map": "/resume/static/js/runtime-main.3ebc219f.js.map",
-    "static/js/2.2568b14e.chunk.js": "/resume/static/js/2.2568b14e.chunk.js",
-    "static/js/2.2568b14e.chunk.js.map": "/resume/static/js/2.2568b14e.chunk.js.map",
+    "static/js/2.6f0703fb.chunk.js": "/resume/static/js/2.6f0703fb.chunk.js",
+    "static/js/2.6f0703fb.chunk.js.map": "/resume/static/js/2.6f0703fb.chunk.js.map",
     "index.html": "/resume/index.html",
-    "precache-manifest.7e31e6c41c2f57b4cc2f7f25c91fe35d.js": "/resume/precache-manifest.7e31e6c41c2f57b4cc2f7f25c91fe35d.js",
+    "precache-manifest.86c7205bbd821fe00b9e82b02642bd43.js": "/resume/precache-manifest.86c7205bbd821fe00b9e82b02642bd43.js",
     "service-worker.js": "/resume/service-worker.js",
-    "static/css/main.76a5d578.chunk.css.map": "/resume/static/css/main.76a5d578.chunk.css.map",
-    "static/js/2.2568b14e.chunk.js.LICENSE.txt": "/resume/static/js/2.2568b14e.chunk.js.LICENSE.txt",
+    "static/css/main.586ae0d5.chunk.css.map": "/resume/static/css/main.586ae0d5.chunk.css.map",
+    "static/js/2.6f0703fb.chunk.js.LICENSE.txt": "/resume/static/js/2.6f0703fb.chunk.js.LICENSE.txt",
     "static/media/confident.png": "/resume/static/media/confident.9fb66a22.png",
     "static/media/decent.png": "/resume/static/media/decent.ffc8c9ea.png",
     "static/media/default.png": "/resume/static/media/default.e23e6cfb.png",
     "static/media/learning.png": "/resume/static/media/learning.5b31dd94.png",
-    "static/media/star.png": "/resume/static/media/star.a61abd18.png"
+    "static/media/thanks.png": "/resume/static/media/thanks.5e8681cb.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3ebc219f.js",
-    "static/js/2.2568b14e.chunk.js",
-    "static/css/main.76a5d578.chunk.css",
-    "static/js/main.8df5ffc0.chunk.js"
+    "static/js/2.6f0703fb.chunk.js",
+    "static/css/main.586ae0d5.chunk.css",
+    "static/js/main.ee34ba42.chunk.js"
   ]
 }
