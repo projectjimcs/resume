@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Star from './images/star.png';
 import StarMap from './Maps/StarMap.js';
 
 export default class StarRating extends React.Component {
