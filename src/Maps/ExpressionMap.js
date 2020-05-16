@@ -1,7 +1,7 @@
-import Default from './images/default.png';
-import Confident from './images/confident.png';
-import Decent from './images/decent.png';
-import Learning from './images/learning.png';
+import Default from '../images/default.png';
+import Confident from '../images/confident.png';
+import Decent from '../images/decent.png';
+import Learning from '../images/learning.png';
 
 const expressionMap = {
   default: {

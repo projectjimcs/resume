@@ -5,7 +5,7 @@ import WorkExperience from './WorkExperience.js';
 import EducationExperience from './EducationExperience.js';
 import ProjectExperience from './ProjectExperience.js';
 import Character from './Character.js';
-import ExpressionMap from './ExpressionMap.js';
+import ExpressionMap from './Maps/ExpressionMap.js';
 
 import './css/app.scss';
 import './css/divider.scss';
@@ -81,7 +81,7 @@ export default class App extends React.Component {
               </div>
             </div>
             <div className='main-footer'>
-              <span><a href="https://www.freepik.com/free-photos-vectors" rel='noopener noreferrer' target='_blank'>Business and star vector created by freepik - www.freepik.com</a></span>
+              <span><a href="https://www.freepik.com/free-photos-vectors" rel='noopener noreferrer' target='_blank'>Business and star vector created by freepik</a></span>
             </div>
             <ParticleContainer />
           </React.Fragment>
