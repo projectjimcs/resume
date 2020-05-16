@@ -1,21 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Star from './images/star.png';
+import StarMap from './Maps/StarMap.js';
 
 export default class StarRating extends React.Component {
   render() {
-    const starClass = this.props.isHalfStar ? 'half-star' : '';
+    const {
+      starType,
+    } = this.props;
 
     return (
       <div className='star-container'>
-        <div className={starClass}>
-          <img className='star-icon' src={Star} />
-        </div>
+          <img className='star-icon' src={StarMap[starType]} />
       </div>
     );
   }
 }
 
 StarRating.propTypes = {
-  isHalfStar: PropTypes.bool,
+  starType: PropTypes.string.isRequired,
 };

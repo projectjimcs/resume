@@ -7,6 +7,8 @@ export default class Character extends React.Component {
   constructor(props) {
     super(props);
 
+    this.maxRating = 5;
+
     this.handleChangeExpression = this.handleChangeExpression.bind(this);
   }
 
@@ -22,13 +24,21 @@ export default class Character extends React.Component {
       expressionData,
     } = this.props;
 
+    const remainingStars = this.maxRating - expressionData.rating;
+
     const starComponent = [];
     for (let i = 0; i < Math.floor(expressionData.rating); i++) {
-      starComponent.push(<StarRating />);
+      starComponent.push(<StarRating starType='fullStar' />);
     }
 
     if (expressionData.rating % 1) {
-      starComponent.push(<StarRating isHalfStar={true} />);
+      starComponent.push(<StarRating starType='halfStar' />);
+    }
+
+    if (remainingStars > 0.5) {
+      for (let j = 0; j < Math.floor(remainingStars); j++) {
+        starComponent.push(<StarRating starType='emptyStar' />);
+      }
     }
 
     return (
