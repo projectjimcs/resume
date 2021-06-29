@@ -10,6 +10,13 @@ export default class EducationExperience extends React.Component {
             EDUCATION
           </span>
 
+          <span className='row'>
+            <div className='experience-row'>
+              <span className='sub-heading'>University of British Columbia</span>
+              <span className='job-title'>Enrolled in the Integrated Computer Science Program (Second Degree) / Sep 2020 - Present</span>
+            </div>
+          </span>
+
           <div className='row'>
             <div className='experience-row'>
               <span className='sub-heading'>Lighthouse Labs</span>

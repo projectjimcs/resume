@@ -37,9 +37,9 @@ export default class DeveloperExperience extends React.Component {
             </div>
             <div className='skill-block'>
               <i
-                name='csharp'
+                name='java'
                 onClick={this.handleChangeExpression}
-                className='devicon-csharp-plain-wordmark icon-colored icon-medium'
+                className='devicon-java-plain-wordmark icon-colored icon-medium'
               ></i>
             </div>
             <div className='skill-block'>
