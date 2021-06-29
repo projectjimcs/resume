@@ -19,10 +19,10 @@ const expressionMap = {
     speech: 'I use javascript at my current work as well as my personal projects all the time!',
     rating: 5
   },
-  csharp: {
+  java: {
     image: Learning,
-    speech: 'I am currently learning C# and Unity for personal development.',
-    rating: 3
+    speech: 'Java was the main language used for projects in one of my computer science courses, I am familiar with it!',
+    rating: 3.5
   },
   ruby: {
     image: Learning,
@@ -77,7 +77,7 @@ const expressionMap = {
   webpack: {
     image: Decent,
     speech: 'Most of my experience with webpack has been through my own projects, but I am definitely familiar with it!',
-    rating: 3.5
+    rating: 3
   },
   mysql: {
     image: Decent,
